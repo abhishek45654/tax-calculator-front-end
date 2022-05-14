@@ -1,0 +1,22 @@
+.outer_section{
+    background: rgb(69, 98, 202) linear-gradient(rgb(69, 98, 202),rgb(61, 199, 227));
+    padding: 5px;
+    height: 100%;
+}
+table {
+    border: solid 1px rgb(52, 48, 48);
+    width: 100%;
+    background: rgb(69, 98, 202) linear-gradient(rgb(69, 98, 202),rgb(61, 199, 227));
+    text-align: left;
+}
+
+.mat_cell, .mat_footer_cell{
+    padding-right: 25px;
+    
+}
+button{
+    color: blue;
+
+    background: rgb(69, 98, 202) linear-gradient(rgb(61, 199, 227),rgb(69, 98, 202));
+
+}

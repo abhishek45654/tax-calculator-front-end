@@ -1,0 +1,65 @@
+[
+    {
+        "title" : "turbotax.intuit.com",
+        "link" : "https://turbotax.intuit.com",
+        "advantages" : [
+            "File for $0 on simple state & federal returns",
+            "No tax expertise needed",
+            "Maximum refund"
+        ]
+    },
+    {
+        "title" : "www.e-file.com",
+        "link" : "https://www.e-file.com",
+        "advantages" : [
+            "3 filing packages available",
+            "Online and phone support for customers",
+            "Submit your taxes to the IRS directly"
+        ]
+    },
+    {
+        "title" : "www.taxact.com",
+        "link" : "https://www.taxact.com",
+        "advantages" : [
+            "4 different filing options",
+            "One-on-one help from experts",
+            "Deduction maximizer tool"
+        ]
+    },
+    {
+        "title" : "dashboard.keepertax.com",
+        "link" : "https://dashboard.keepertax.com/onboarding/income-type",
+        "advantages" : [
+            "$16/month + $89 filing fee",
+            "Each user assigned a bookkeeper",
+            "Seamlessly export all your documents"
+        ]
+    },
+    {
+        "title" : "www.flexoffers.com",
+        "link" : "https://www.flexoffers.com",
+        "advantages" : [
+            "One-on-one expert assistance",
+            "File in-person or online"
+        ]
+    },
+    {
+        "title":"www.freetaxusa.com",
+        "link":"https://www.freetaxusa.com/",
+        "advantages":[
+            "IRS approved",
+            "Free filing of federal tax",
+            "Fast customer support"
+        ]
+    },
+    {
+        "title":"www.irs.gov",
+        "link":"https://www.irs.gov/",
+        "advantages":[
+            "Government approved",
+            "Free filing service",
+            "Multi-lingual"
+        ]
+    }
+    
+]

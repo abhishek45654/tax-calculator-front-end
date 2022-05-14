@@ -1,0 +1,17 @@
+<div class = "title">
+    <div class="header-title-section">
+        <h1>TAX CALCULATOR</h1>
+        <button mat-raised-button *ngIf="isLoggedIn==false" id="login_button" (click)="signIn()">
+            Login
+        </button>
+        <button mat-raised-button *ngIf="isLoggedIn" id="login_button" (click)="signOut()">
+            Logout
+        </button>
+    </div>
+    <div class="header-link-section">
+        <a routerLink="/home">HOME</a>
+        <a routerLink="/income">CALCULATOR</a>
+        <a routerLink="/link">IMPORTANT LINKS</a>
+        <a routerLink="/history">HISTORY</a>
+    </div>
+</div>

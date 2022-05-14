@@ -1,0 +1,254 @@
+[
+    {
+        "incomeLowerLimit": 0,
+        "incomeUpperLimit": 9950,
+        "incomeRange": 9950 , 
+        "maxTax": 995,
+        "taxRate": 10,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 9951,
+        "incomeUpperLimit": 40525 ,
+        "incomeRange": 30574 , 
+        "maxTax": 3669,
+        "taxRate": 12,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 40526,
+        "incomeUpperLimit": 86375 ,
+        "incomeRange": 45849 , 
+        "maxTax": 10087,
+        "taxRate": 22,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 86376,
+        "incomeUpperLimit": 164925 ,
+        "incomeRange": 78549 , 
+        "maxTax": 18852,
+        "taxRate": 24,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 164926,
+        "incomeUpperLimit": 209425 ,
+        "incomeRange": 44499 , 
+        "maxTax": 14240,
+        "taxRate": 32,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 209426,
+        "incomeUpperLimit": 523600 ,
+        "incomeRange": 314174 , 
+        "maxTax": 109961,
+        "taxRate": 35,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 523601,
+        "incomeUpperLimit": 0 ,
+        "incomeRange": 0 , 
+        "maxTax": 0,
+        "taxRate": 37,
+        "status": "Single",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 0,
+        "incomeUpperLimit": 14200 ,
+        "incomeRange": 14200 , 
+        "maxTax": 1420,
+        "taxRate": 10,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 14201,
+        "incomeUpperLimit": 54200 ,
+        "incomeRange": 39999 , 
+        "maxTax": 4800,
+        "taxRate": 12,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 54201,
+        "incomeUpperLimit": 86350 ,
+        "incomeRange": 32149 , 
+        "maxTax": 7073,
+        "taxRate": 22,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 86351,
+        "incomeUpperLimit": 164900 ,
+        "incomeRange": 78549 , 
+        "maxTax": 18852,
+        "taxRate": 24,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 164901,
+        "incomeUpperLimit": 209400 ,
+        "incomeRange": 44499 , 
+        "maxTax": 14240,
+        "taxRate": 32,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 209401,
+        "incomeUpperLimit": 523600 ,
+        "incomeRange": 314199 , 
+        "maxTax": 109970,
+        "taxRate": 35,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 523601,
+        "incomeUpperLimit": 0 ,
+        "incomeRange": 0 , 
+        "maxTax": 0,
+        "taxRate": 37,
+        "status": "Head of household",
+        "standardDeduction":18800
+    },
+    {
+        "incomeLowerLimit": 0,
+        "incomeUpperLimit": 19900 ,
+        "incomeRange": 19900 , 
+        "maxTax": 1990,
+        "taxRate": 10,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 19901,
+        "incomeUpperLimit": 81050 ,
+        "incomeRange": 61150 , 
+        "maxTax": 7338,
+        "taxRate": 12,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 81051,
+        "incomeUpperLimit": 172750 ,
+        "incomeRange": 91699 , 
+        "maxTax": 20174,
+        "taxRate": 22,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 172751,
+        "incomeUpperLimit": 329850 ,
+        "incomeRange": 157099 , 
+        "maxTax": 37704,
+        "taxRate": 24,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 329851,
+        "incomeUpperLimit": 418850 ,
+        "incomeRange": 88999 , 
+        "maxTax": 28480,
+        "taxRate": 32,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 418851,
+        "incomeUpperLimit": 628300 ,
+        "incomeRange": 209449 , 
+        "maxTax": 73307,
+        "taxRate": 35,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 628301,
+        "incomeUpperLimit": 0 ,
+        "incomeRange": 0 , 
+        "maxTax": 0,
+        "taxRate": 37,
+        "status": "Married filing jointly / qualifying widow",
+        "standardDeduction":25100
+    },
+    {
+        "incomeLowerLimit": 0,
+        "incomeUpperLimit": 9950 ,
+        "incomeRange": 9950 , 
+        "maxTax": 995,
+        "taxRate": 10,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 9951,
+        "incomeUpperLimit": 40525 ,
+        "incomeRange": 30574 , 
+        "maxTax": 3669,
+        "taxRate": 12,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 40526,
+        "incomeUpperLimit": 86375 ,
+        "incomeRange": 45849 , 
+        "maxTax": 10087,
+        "taxRate": 22,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 86376,
+        "incomeUpperLimit": 164925 ,
+        "incomeRange": 78549 , 
+        "maxTax": 18852,
+        "taxRate": 24,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 164926,
+        "incomeUpperLimit": 209425 ,
+        "incomeRange": 44499 , 
+        "maxTax": 14240,
+        "taxRate": 32,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 209426,
+        "incomeUpperLimit": 314150 ,
+        "incomeRange": 104724 , 
+        "maxTax": 36653,
+        "taxRate": 35,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    },
+    {
+        "incomeLowerLimit": 314151,
+        "incomeUpperLimit": 0 ,
+        "incomeRange": 0 , 
+        "maxTax": 0,
+        "taxRate": 37,
+        "status": "Married filing separately",
+        "standardDeduction":12550
+    }
+]

@@ -1,0 +1,166 @@
+<app-header></app-header>
+<div class="main_section">
+    <div id="left_section">
+        <form [formGroup]="incomeDataForm">
+            <mat-card>
+                <mat-card-title style="text-align:center;">Basic Details</mat-card-title>
+                <mat-form-field>
+                    <mat-label>Tax Filing Status</mat-label>
+                    <mat-select formControlName="filingStatus">
+                        <mat-option *ngFor="let status of status" [value]="status">
+                            {{status}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Age</mat-label>
+                    <input matInput formControlName="age" placeholder="Age">
+                </mat-form-field>
+                <!-- <mat-form-field>
+                    <mat-label>Dependency</mat-label>
+                    <input matInput formControlName="dependency" placeholder="no. of dependencies">
+                </mat-form-field> -->
+                <mat-form-field>
+                    <mat-label>Gross Income</mat-label>
+                    <input matInput  type="number" formControlName="grossAnnualIncome" placeholder="Gross annual income">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Deduction</mat-label>
+                    <mat-select formControlName="deduction">
+                        <mat-option *ngFor="let deduction of deductions" [value]="deduction">{{deduction}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </mat-card>
+            <mat-card *ngIf="this.incomeDataForm.value.deduction=='ITEMISED'">
+                <mat-card-title style="text-align:center;">Know Your Itemised Deduction</mat-card-title>
+                <mat-form-field>
+                    <mat-label>Property Taxes</mat-label>
+                    <input matInput type="number" formControlName="propertyTaxesPaid" placeholder="taxes paid on property">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Interests</mat-label>
+                    <input matInput type="number" formControlName="earnedInterests" placeholder="interests earned">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Charity</mat-label>
+                    <input matInput type="number" formControlName="charity" placeholder="donations given in charities">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>State and Local Taxes</mat-label>
+                    <input matInput type="number" formControlName="stateTaxesPaid" placeholder="state taxes paid">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Educational Expenses</mat-label>
+                    <input matInput type="number" formControlName="educationalExpenses" placeholder="Educational Expenses">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Unreimbursed Medical Bills</mat-label>
+                    <input matInput type="number" formControlName="medicalBills" placeholder="unreimbursed medical bills">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Previous Tax Returns</mat-label>
+                    <input matInput type="number" formControlName="previousTaxReturns" placeholder="previous tax returns if any">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Other Deductions Not Covered Above</mat-label>
+                    <input matInput type="number" formControlName="other" placeholder="other deductions">
+                </mat-form-field>
+            </mat-card>
+            <mat-card>
+                <mat-card-title style="text-align:center;">Contributions</mat-card-title>
+                <mat-form-field>
+                    <mat-label>401ks contributions</mat-label>
+                    <input matInput type="number" formControlName="contribution401" placeholder="401ks contributions">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>IRA contributions</mat-label>
+                    <input matInput type="number" formControlName="iraContribution" placeholder="IRA contributions">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Witheld Amounts</mat-label>
+                    <input matInput type="number" formControlName="witheld" placeholder="witheld">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Tax credits</mat-label>
+                    <input matInput type="number" formControlName="taxCredits" placeholder="tax credits">
+                </mat-form-field>
+            </mat-card>
+        </form>
+    </div>
+    <div class="middle">
+        <div id="middle_section">
+            <button mat-raised-button (click)="calculate()" [disabled]="!this.incomeDataForm.valid">
+                Calculate
+            </button>
+            <button mat-raised-button (click)="saveTaxDetails()" [disabled]="!this.incomeDataForm.valid">
+                Save
+            </button>
+        </div>
+    </div>
+    <div id="right_section" >
+        <div >
+            <h1 class="table-heading">RESULT:</h1>
+            <table  cellspacing="0" class="tax-table">
+                <tbody>
+                    <tr>
+                        <td><b>Tax Type</b></td>
+                        <td><b>Marginal Tax Rate</b></td>
+                        <td><b>2021 Taxes*</b></td>
+                    </tr>
+                    <tr>
+                        <td>Federal</td>
+                        <td><span >{{taxRate}}%</span></td>
+                        <td><span >{{federalTax}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span >FICA</span></td>
+                        <td><span >7.65%</span></td>
+                        <td><span >{{ficaTax}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Income Taxes</td>
+                        <td></td>
+                        <td><span >{{federalTax+ficaTax}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tax credit</td>
+                        <td></td>
+                        <td><span>{{this.incomeDataForm.value.taxCredits}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>Witheld Amount</td>
+                        <td></td>
+                        <td><span>{{this.incomeDataForm.value.witheld}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>Final Taxes after all deductions</td>
+                        <td></td>
+                        <td>{{refundAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td>Income After Taxes</td>
+                        <td></td>
+                        <td><span >{{this.incomeDataForm.value.grossAnnualIncome-federalTax-ficaTax}}</span></td>
+                    </tr>
+                    <!-- <tr>
+                        <td><span >Retirement Contributions</span></td>
+                        <td></td>
+                        <td><span class="retirement-contributions-next">$0</span></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div style="padding-left:3%">
+            <h3 style="font-style: italic;">Your qualified standard deduction : {{standardDeduction}}<br>
+            Your total itemised deduction : {{itemisedDeduction}}</h3>
+            <h3 *ngIf="standardDeduction>itemisedDeduction&&this.incomeDataForm.value.deduction=='ITEMISED'" 
+                style="font-style: italic;" >
+                You may want to consider standard deduction for this case.
+            </h3>
+            <h3 style="font-style: italic;" *ngIf="refundAmount<0">
+                you will get refund around : {{-refundAmount}}
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="bottom_section"></div>

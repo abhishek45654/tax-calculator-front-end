@@ -1,0 +1,13 @@
+.tax-table td {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.tax-table th{
+    border-bottom: 1px solid #ccc;
+}
+.tax-table {
+    width: 100%;
+    font-size: 14px;
+    margin: 3% ;
+    border: 1px solid #ccc;
+}

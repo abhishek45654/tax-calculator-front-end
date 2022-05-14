@@ -1,0 +1,33 @@
+.title{
+    background: rgb(69, 98, 202) linear-gradient(rgb(69, 98, 202),rgb(61, 199, 227));
+    height: 10%;
+}
+.title h1{
+    color: black;
+    font-family: Impact, fantasy;
+    font-size: xx-large;
+    margin-left: 40%;
+    padding-top: 1%;
+    margin-bottom: 0;
+}
+#login_button{
+    background: rgb(69, 98, 202) linear-gradient(rgb(69, 98, 202),rgb(61, 199, 227));
+    transition: all 0.5s;
+    cursor: pointer;
+    width: auto;
+    height: 45%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.header-title-section{
+    display: flex;
+    justify-content: space-between;
+}
+.header-link-section{
+    margin-left: 33%;
+}
+.header-link-section a{
+    padding: 1%;
+    color: blue;
+}
